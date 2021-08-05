@@ -14,18 +14,18 @@ Tecnologia Utilizada:
 - NGINX
 - PM2
 
-## Instalação
-
-```bash
-# Inicia a aplicação utilizando docker
-$ ./start
-```
-
 ## Instalação do Docker e dependencias
 
 ```bash
 # Inicia a aplicação utilizando docker
 $ ./install-init
+```
+
+## Instanciar os containers
+
+```bash
+# Inicia a aplicação utilizando docker
+$ ./start
 ```
 
 ## Iniciar manualmente
