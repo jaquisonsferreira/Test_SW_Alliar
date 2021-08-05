@@ -89,10 +89,6 @@ export class ExamController {
     type: IResponseAddLab,
   })
   async addLab(@Param() { exameId }: IExameId, @Body() data: IAddLabDto) {
-    if (!exameId) {
-      throw new HttpException('Id não informado', HttpStatus.BAD_REQUEST);
-    }
-
     const exam = await this.examService.addLab(exameId, data);
     return exam;
   }
@@ -103,9 +99,6 @@ export class ExamController {
     type: IResponseAddLab,
   })
   async removeLab(@Param() { exameId }: IExameId, @Body() data: IAddLabDto) {
-    if (!exameId) {
-      throw new HttpException('Id não informado', HttpStatus.BAD_REQUEST);
-    }
     const exam = await this.examService.removeLab(exameId, data);
     return exam;
   }
