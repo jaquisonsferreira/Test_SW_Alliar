@@ -21,6 +21,13 @@ Tecnologia Utilizada:
 $ ./start
 ```
 
+## Instalação do Docker e dependencias (opcional)
+
+```bash
+# Inicia a aplicação utilizando docker
+$ ./install-init
+```
+
 ## Iniciar manualmente
 
 ```bash
