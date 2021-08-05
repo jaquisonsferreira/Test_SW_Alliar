@@ -10,6 +10,9 @@ Tecnologia Utilizada:
 - MongoDB
 - Docker
 - Docker Compose
+- GCP
+- NGINX
+- PM2
 
 ## Instalação
 
@@ -33,6 +36,17 @@ docker-compose logs -f
 
 ```bash
 http://localhost:3333/documentacao/
+```
+
+## Deploy da aplicação
+
+```bash
+# Documentação - Swagger
+https://lab.jferreira.dev/documentacao/
+
+#Api
+https://lab.jferreira.dev
+
 ```
 
 ## Contato
