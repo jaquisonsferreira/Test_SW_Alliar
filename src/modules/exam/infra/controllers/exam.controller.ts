@@ -12,6 +12,7 @@ import {
   Query,
 } from '@nestjs/common';
 import { ApiProperty, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { IsMongoId, IsNotEmpty } from 'class-validator';
 import { IAddLabDto } from 'src/modules/dtos/IAddLab.dto';
 import { ICreateExamDto } from 'src/modules/dtos/ICreateExam.dto';
 import { IDeleteExamDto } from 'src/modules/dtos/IDeleteExam.dto';
@@ -25,11 +26,14 @@ import { ExamService } from '../../services/exam.service';
 
 class ISearch {
   @ApiProperty()
+  @IsNotEmpty({ message: 'Parametro nome é obrigatório' })
   nome: string;
 }
 
 class IExameId {
   @ApiProperty()
+  @IsMongoId({ message: 'Id do exame inválido' })
+  @IsNotEmpty()
   exameId: string;
 }
 
